@@ -1,0 +1,886 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
+/*WAP FOR PRACTICE CODING RULE*/
+
+/****************************************************
+ * Stylesheet
+ *
+ * 1.general
+ * 2.layout
+ * 3.template
+ * 4.content
+ * 5.general on smartphone(sp)
+ * 6.layout on smartphone(sp)
+ * 7.template for sp
+ * 8.content for sp
+ *
+ * ※The breakpoint is 768, so please change it according to the site
+ ****************************************************/
+/****************************************************
+
+/****************************************************
+ * 1.GENERAL
+ ****************************************************/
+
+html {
+    font-size: 10px;
+    font-family: 'Noto Sans JP';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+}
+
+/****************************************************
+ * 2.LAYOUTS
+ ****************************************************/
+ .inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    width: 94%;
+}
+.container {
+    min-width: 1120px;
+    margin: 0 auto;
+}
+/****************************************************
+ * 3.TEMPLATE
+****************************************************/
+/* HEADER STYLE */
+#header {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    min-width: 1120px;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 10;
+}
+#header h1 {
+    margin-left: 10px;
+}
+.gNav_wrapper ul {
+    display: flex;
+    align-items: center;
+}
+.gNav_wrapper ul li:first-child {
+    padding-left: 0;
+}
+.gNav_wrapper ul li {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #333333;
+    padding-left: 37px;
+}
+.mail_contact {
+    height: 70px;
+}
+.menu_collapse {
+    display: none;
+}
+.icon_close {
+    display: none;
+}
+/* FOOTTER STYLE */
+#footer {
+    background-color: #313738;
+}
+.pagetop {
+    background-color: #0c46c1;
+    text-align: center;
+}
+.pagetop img {
+    padding: 22px 0 18px 0;
+    cursor: pointer;
+}
+.ft_content {
+    display: flex;
+    justify-content: space-between;
+}
+.ft_info p {
+    font-size: 1.6rem;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+.ft_menu {
+    width: 39%;
+    display: inline-block;
+}
+.ft_menu a {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 32px;
+}
+
+.ft_copyright p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #ffffff;
+    text-align: center;
+}
+/* PAGE TITLE */
+.page_title_contact {
+    background-image: url(../img/common/bg_common_page_ttl_contact.png);
+    height: 333px;
+    background-position: center;
+}
+.page_title_privacypolicy {
+    background-image: url(../img/common/bg_common_page_ttl_privacypolicy.png);
+    height: 333px;
+    background-position: center;
+}
+.page_title_recruit {
+    background-image: url(../img/common/bg_common_page_ttl_recruit.png);
+    height: 333px;
+    background-position: center;
+}
+.page_title_product {
+    background-image: url(../img/common/bg_common_page_ttl_product.png);
+    height: 333px;
+    background-position: center;
+}
+.breadcrumb {
+    background-color: #0c46c1;
+    margin-top: -147px;
+}
+.breadcrumb ul{
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: normal;
+}
+.breadcrumb li:first-child:after {
+    content: ">";
+    margin: 0 21px;
+    color: #ffffff;
+}
+.breadcrumb li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/* BOX INFOR */
+.box_common_infor {
+    border: solid 1px #c2d1ef;
+    background-color: #f0f4fb;
+    padding: 30px 31px 30px 31px;
+}
+.ttl_common_section {
+    background-image: url(../img/common/icon_common_\ slashes.jpg);
+    background-repeat: no-repeat;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: 3px;
+    color: #333333;
+    background-position: 0 15px;
+    border-bottom: dashed 1px #b9d2fe;
+    padding-left: 43px;
+    margin-top: 87px;
+    margin-bottom: 60px;
+}
+.box_common_infor .box_text {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2;
+    color: #333333;
+}
+
+.box_common_infor a:first-child {
+    margin-right: 30px;
+}
+.box_common_infor .add_icon {
+    background-image: url(../img/recruit/icon_recruit01.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.78;
+    letter-spacing: 1.8px;
+    color: #333333;
+    padding-left: 40px;
+}
+.box_common_infor p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #333333;
+}
+/* BUTTON TO CONTACT */
+.common_sec {
+    padding: 100px 0;
+    text-align: center;
+}
+.common_sec01 {
+    padding: 50px 0 100px 0;
+    text-align: center;
+}
+/****************************************************
+ * 4.CONTENT
+****************************************************/
+    /****************************************************
+    * PAGETOP CONTENT
+    ****************************************************/
+        .bnr_top_page img {
+            width: 100%;
+        }
+        .top_sec01 {
+            display: flex;
+            align-items: center;
+            padding: 113px 0;
+        }
+        .top_sec01 h2 {
+            display: flex;
+            align-items: center;
+            font-size: 4rem;
+            font-weight: 500;
+            letter-spacing: 4px;
+            color: #333333;
+        }
+        .top_sec01 h2 p {
+            padding: 5.5px 18px;
+            margin-left: 18px;
+        }
+        .top_sec01 .icon_top_news {
+            background-image: url(../img/top/icon_top_news.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: 0.8px;
+            color: #ffffff;
+        }
+        .top_sec01_txt {
+            font-size: 18px;
+            font-weight: 400;
+            color: #333333;
+            margin-left: 62px;
+        }
+        .top_sec01_txt .date {
+            color: #2458c7;
+        }
+        .top_sec02 {
+            background-image: url(../img/top/bg_top_sec02.jpg);
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            padding-top: 94px;
+            padding-bottom: 200px;
+        }
+        .ttl_top_section {
+            font-size: 4.5rem;
+            letter-spacing: 4.5px;
+            margin-bottom: 61px;
+            
+            color: #ffffff;
+        }
+        .icon_ttl_top_section {
+            background-image: url(../img/top/icon_ttl_top_section.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.9px;
+            display: block;
+            padding: 4.5px 0;
+            margin-top: 26px;
+            margin-bottom: 45px;
+        }
+        .txt_ttl_top_section {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.94;
+            letter-spacing: normal;
+            display: block;
+        }
+        .top_sec03 {
+            background-image: url(../img/top/bg_top_sec03.png );
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: -150px;
+            padding: 175px 0 118px 0;
+        }
+        .top_sec04 {
+            background-image: url(../img/top/bg_top_sec04.png );
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: -12px;
+            padding: 175px 0 50px 0;
+        }
+
+        a img {
+            -moz-transition: opacity 0.3s;
+            -o-transition: opacity 0.3s;
+            -webkit-transition: opacity 0.3s;
+            transition: opacity 0.3s; }
+        a img:hover {opacity: 0.6; } 
+    /****************************************************
+    * PAGECONTACT CONTENT
+    ****************************************************/
+
+        .mailform_contact p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2;
+            letter-spacing: normal;
+            color: #333333;
+            margin-bottom: 41px;
+        }
+        .mailform_contact p span {
+            color: #c92c2c;
+        }
+        .table {
+            width: 100%;
+        }
+        .table tbody tr th {
+            width: 220px;
+            background-color: #0c46c1;
+            vertical-align: top;
+            border-bottom: solid 1px #ffffff;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 4.88;
+            letter-spacing: 0.8px;
+            color: #ffffff;
+        }
+        .table tbody tr td {
+            padding: 20px;
+            background-color: #f0f4fb;
+            vertical-align: middle;
+            border-bottom: solid 1px #ffffff;
+        }
+        .table input[type="text"] {
+            width: 97%;
+            padding: 10px;
+            border: none;
+        }
+        .table textarea {
+            width: 97%;
+            padding: 0;
+            border: none;
+            height: 150px;
+            padding-right: 20px;
+        }
+        .contact_sec02 .submit {
+            margin: 50px 0 100px 0;
+        }
+        .submit input[type="submit"] {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2;
+            letter-spacing: 1.6px;
+            color: #ffffff;
+            width: 120px;
+            height: 60px;
+            margin: 0 auto;
+            cursor: pointer;
+            display: block;
+            background-image: url(../img/contact/btn_contact_submit.png);
+            border: none;
+            transition: opacity 0.3s;
+        }
+        .submit input[type="submit"]:hover {
+            opacity: 0.3;
+        }
+    /****************************************************
+    * PAGECPRIVACYPOLICY CONTENT
+    ****************************************************/
+        .privacypolicy_sec01 {
+            margin: 87px 0 100px 0;
+        }
+        .privacypolicy_sec01 p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2;
+            letter-spacing: normal;
+            color: #333333;
+        }
+        .privacypolicy_sec01 .panel:nth-child(1) h4 {
+            background-image: url(../img/privacypolicy/icon_privacy01.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+        .privacypolicy_sec01 .panel:nth-child(2) h4 {
+            background-image: url(../img/privacypolicy/icon_privacy02.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+        .privacypolicy_sec01 .panel:nth-child(3) h4 {
+            background-image: url(../img/privacypolicy/icon_privacy03.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+        .privacypolicy_sec01 .panel:nth-child(4) h4 {
+            background-image: url(../img/privacypolicy/icon_privacy04.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+        .privacypolicy_sec01 .panel:nth-child(5) h4 {
+            background-image: url(../img/privacypolicy/icon_privacy05.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+        .privacypolicy_sec01 .panel h4 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.78;
+            letter-spacing: 1.8px;
+            color: #333333;
+            padding-left: 35px;
+        }
+        .privacypolicy_sec01 .panel {
+            background-color: #f0f4fb;
+            margin-top: 27px;
+            padding: 23px;
+        }
+        .privacypolicy_sec01 .panel .panel_in {
+            background-color: #ffffff;
+            margin-top: 15px;
+            padding: 20px;
+        }
+        .privacypolicy_sec01 .panel .panel_in li {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 2;
+            letter-spacing: 0.8px;
+            color: #333333;
+            padding-left: 35px;
+        }
+        .privacypolicy_sec01 .panel .panel_in li:nth-child(1) {
+            background-image: url(../img/privacypolicy/icon_privacy02_panel_in.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-position: 0 4px;
+        }
+        .privacypolicy_sec01 .panel .panel_in li:nth-child(2) {
+            background-image: url(../img/privacypolicy/icon_privacy02_panel_in.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-position: 0 4px;
+        }
+        .privacypolicy_sec01 .panel .panel_in li:nth-child(3) {
+            background-image: url(../img/privacypolicy/icon_privacy02_panel_in.png);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-position: 0 4px;
+        }
+    /****************************************************
+    * PAGE RECRUIT CONTENT
+    ****************************************************/
+        #contents .table01 {
+            width: 100%;
+            margin-top: 23px;
+            margin-bottom: 83px;
+        }
+        #contents .table01 tbody tr th {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 3.69;
+            letter-spacing: 0.8px;
+            color: #0c46c1;
+            width: 130px;
+            vertical-align: top;
+            position: relative;
+        }
+        #contents .table01 tbody tr th::after {
+            width: 100%;
+            height: 2px;
+            content: '';
+            background-image: url(../img/recruit/pic_recruit_table_th_bar.jpg);
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+        }
+        #contents .table01 tbody tr td {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 3.69;
+            letter-spacing: normal;
+            color: #333333;
+            padding-left: 21px;
+            border-bottom: 1px solid #f0f4fb;
+        }
+        #contents .table01 tbody tr:last-child td,#contents .table01 tbody tr:nth-child(4) td,#contents .table01 tbody tr:nth-child(6) td {
+            line-height: 2;
+            padding: 11px;
+        }
+        .box_common_infor .box_in_infor {
+            background-color: #ffffff;
+            padding: 32px 0 24px 22px;
+        }
+    /****************************************************
+    * PAGE PRODUCT CONTENT
+    ****************************************************/
+        .ctn_product {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ctn_product_left {
+            width: 720px;
+        }
+        .ctn_product_right {
+            width: 360px;
+        }
+        .product_sec01 .product_detail {
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: normal;
+            color: #333333;
+            margin-bottom: 18px;
+            position: relative;
+            padding-left: 19px;
+        }
+        .product_sec01 .product_detail::before {
+            content: '';
+            height: 23px;
+            background-color: #0c46c1;
+            width: 4px;
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .ctn_product_left p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: normal;
+            color: #333333;
+            border: 1px solid #f0f4fb;
+            padding: 21px;
+            margin-bottom: 26px;
+        }
+        .product_sec01 .ctn_product_right img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .box_common_infor span {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.78;
+            letter-spacing: 1.8px;
+            color: #333333;
+        }
+        .box_common_infor .ttl_product_box {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2;
+            letter-spacing: normal;
+            color: #333333;
+        }
+        .table02 {
+            width: 100%;
+            table-layout: fixed;
+            line-height: 2;
+            position: relative;
+            margin-bottom: 100px;
+        }
+        .table02 tr td {
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: normal;
+            color: #333333;
+        }
+        .product_orange_book {
+            position: absolute;
+            bottom: 10px;
+            right: 163px;
+        }
+    /****************************************************
+    * PAGE COMPANY CONTENT
+    ****************************************************/
+        .box_common_infor .box_company {
+            line-height: 1.67;
+            font-weight: bold;
+        }
+
+        
+            
+/****************************************************
+ * 5.GENERAL ON SMARTPHONE(SP)
+****************************************************/
+
+/****************************************************
+ * 6.LAYOUT ON SMARTPHONE(SP)
+****************************************************/
+@media screen and (max-width: 767px) {
+    .inner {
+        max-width: 94%;
+    }
+}    
+/****************************************************
+ * 7.TEMPLATE FOR SP
+****************************************************/
+@media screen and (max-width:768px) {
+    /* HEADER */
+    .container {
+        min-width: 100%;
+    }
+    #header {
+        min-width: 100%;
+    }
+    .menu_collapse {
+        display: flex;
+        align-items: center;
+    }
+    .menu_collapse img {
+        width: 5%;
+        font-size: 3rem;
+        cursor: pointer;
+        position: absolute;
+        color: #061c49;
+        right: 3rem;
+        z-index: 2;
+    }
+    #gNav.gNav_wrapper {
+        margin-left: 0;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        z-index: 2;
+        border-left: 1px solid #f2f2f2;
+        will-change: transform;
+        transform: translateX(100%);
+        display: block;
+        width: 70%;
+        height: 100vh;
+        overflow: scroll;
+    }
+    #gNav.gNav_wrapper.is_open {
+        transform: translateX(0);
+        background-color: #b9d2fe;
+    }
+    .gNav_wrapper {
+        display: none;
+    }
+    .on .icon_close {
+        display: block;
+    }
+    .on .icon_open {
+        display: none;
+    }
+    .gNav_wrapper ul {
+        display: block;
+    }
+    .gNav_wrapper ul li {
+        padding: 15px 30px;
+        border-bottom: 1px solid #ffffff;
+    }
+    .gNav_wrapper ul li:first-child {
+        padding-top: 60px;
+        padding-left: 30px;
+    }
+    .gNav_wrapper ul li:last-child {
+        text-align: center;
+        border-bottom: 0;
+        padding-top: 30px;
+    }
+    /* FOODER */
+    .ft_content {
+        display: block;
+    }
+    .ft_info {
+        text-align: center;
+        margin: 25px 0;
+    }
+    .ft_menu {
+        text-align: center;
+        width: 100%;
+        border-top: solid 1px #ffffff;
+        border-bottom: solid 1px #ffffff;
+        padding: 5px 0;
+        margin-top: 0;
+    }
+    .ft_info p {
+        font-size: 1.4rem;
+    }
+    .ft_menu a {
+        margin: 0 10px;
+        font-size: 1.6rem;
+    }
+    .ft_copyright {
+        padding-top: 20px;
+    }
+    /* BOX */
+    .ttl_common_section {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 2.5rem;
+        background-position: 0 3px;
+        line-height: 1.5;
+    }
+    /* PAGE_TITLE */
+    .page_title_product {
+        height: 280px;
+    }
+}
+@media screen and (max-width:640px) {
+    #header h1 a img {
+        width: 250px;
+    }
+    .page_title_product {
+        height: 250px;
+    }
+}
+/****************************************************
+ * 8.CONTENT FOR SP
+****************************************************/
+@media screen and (max-width:768px) {
+    /****************************************************
+    * PAGETOP CONTENT
+    ****************************************************/  
+        .top_sec01 {
+            display: block;
+            padding: 30px 0;
+        }
+        .top_sec01 h2 {
+            font-size: 3rem;
+        }
+        .top_sec01_txt {
+            margin-top: 10px;
+            margin-left: 5px;
+            font-size: 1.6rem;
+        }
+        .ttl_top_section {
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+        }
+        .icon_ttl_top_section {
+            margin: 20px 0;
+        }
+        .txt_ttl_top_section {
+            font-size: 1.6rem;
+        }
+        .top_sec02,.top_sec03,.top_sec04 {
+            padding-top: 30px;
+        }
+        .top_sec03 {
+            padding-bottom: 60px;
+        }
+        .common_sec,.common_sec01 { padding: 40px 0;}
+        .common_sec a img,.common_sec01 a img {
+            width: 94%;
+        }
+    /****************************************************
+    * PAGECONTACT CONTENT
+    ****************************************************/
+        .mailform_contact p {
+            font-size: 1.4rem;
+            margin-bottom: 31px;
+        }
+        .table tbody tr th {
+            width: 30%;
+            line-height: 1.5;
+        }
+        .table tbody tr td {
+            padding: 12px;
+        }
+        .table input[type="text"] {
+            padding: 6px;
+        }
+        .table textarea { 
+            height: 100px;
+            padding-right: 10px;
+        }
+        .contact_sec02 .submit {
+            margin: 30px 0 50px 0;
+        }
+    /****************************************************
+    * PAGE CPRIVACYPOLICY CONTENT
+    ****************************************************/
+        .privacypolicy_sec01 {
+            margin: 47px 0 55px 0;
+        }
+        .privacypolicy_sec01 p {
+            font-size: 1.4rem;
+        }
+        .privacypolicy_sec01 .panel h4 {
+            font-size: 1.6rem;
+        }
+        .privacypolicy_sec01 .panel .panel_in li {
+            font-size: 1.4rem;
+        }
+    /****************************************************
+    * PAGE RECRUIT CONTENT
+    ****************************************************/
+        #contents .table01 {
+            margin-bottom: 50px;
+        }
+        .box_common_infor .box_in_infor {
+            padding: 27px 0 19px 11px;
+        }
+    /****************************************************
+    * PAGE PRODUCT CONTENT
+    ****************************************************/
+        .product_sec01 .product_detail { font-size: 2rem; }
+        .ctn_product_left p { 
+            font-size: 1.4rem;
+            line-height: 1.5;
+            padding: 15px;
+            margin-bottom: 18px;
+        }
+        .ctn_product_left { 
+            width: 100%; 
+        }
+        .ctn_product { display: block; }
+        .product_sec01 .ctn_product_right {
+            width: 100%;
+            letter-spacing: -9px;
+        }
+        .product_sec01 .ctn_product_right img {
+            width: 48%;
+            margin: 1%;
+        }
+        .table02 tbody {
+            display: inline;
+        }
+        .table02 tbody tr {
+            display: inline;
+        }
+        .table02 tbody tr td {
+            display: inline-block;
+            margin: 3px;
+        }
+        .table02 tbody tr td::before {
+            content: '・';
+            margin-right: 5px;
+            height: 2px;
+            width: 2px;
+            color: #0c46c1;
+        }
+        .table02 tbody tr .product_orange_book::before {
+            display: none;
+        }
+        .table02 tbody tr .product_orange_book {
+            bottom: -82px;
+            right: 69px;
+        }
+}
+@media screen and (max-width:1120px) and (min-width:769px) {
+    .product_orange_book {
+        right: 142px;
+    }
+    .ctn_product_left { width: 680px;}
+}
