@@ -83,6 +83,10 @@ p {
     color: #333333;
     padding-left: 37px;
 }
+.gNav_wrapper ul li a {
+    text-decoration: none;
+    color: #333333;
+}
 .mail_contact {
     height: 70px;
 }
@@ -158,6 +162,11 @@ p {
     height: 333px;
     background-position: center;
 }
+.page_title_company {
+    background-image: url(../img/common/bg_common_page_ttl_company.png);
+    height: 333px;
+    background-position: center;
+}
 .breadcrumb {
     background-color: #0c46c1;
     margin-top: -147px;
@@ -196,7 +205,6 @@ p {
     border-bottom: dashed 1px #b9d2fe;
     padding-left: 43px;
     margin-top: 87px;
-    margin-bottom: 60px;
 }
 .box_common_infor .box_text {
     display: flex;
@@ -421,27 +429,27 @@ p {
         .privacypolicy_sec01 .panel:nth-child(1) h4 {
             background-image: url(../img/privacypolicy/icon_privacy01.jpg);
             background-repeat: no-repeat;
-            background-position: left;
+            background-position: 0 4px;
         }
         .privacypolicy_sec01 .panel:nth-child(2) h4 {
             background-image: url(../img/privacypolicy/icon_privacy02.jpg);
             background-repeat: no-repeat;
-            background-position: left;
+            background-position: 0 4px;
         }
         .privacypolicy_sec01 .panel:nth-child(3) h4 {
             background-image: url(../img/privacypolicy/icon_privacy03.jpg);
             background-repeat: no-repeat;
-            background-position: left;
+            background-position: 0 4px;
         }
         .privacypolicy_sec01 .panel:nth-child(4) h4 {
             background-image: url(../img/privacypolicy/icon_privacy04.jpg);
             background-repeat: no-repeat;
-            background-position: left;
+            background-position: 0 4px;
         }
         .privacypolicy_sec01 .panel:nth-child(5) h4 {
             background-image: url(../img/privacypolicy/icon_privacy05.jpg);
             background-repeat: no-repeat;
-            background-position: left;
+            background-position: 0 4px;
         }
         .privacypolicy_sec01 .panel h4 {
             font-size: 1.8rem;
@@ -470,19 +478,19 @@ p {
             padding-left: 35px;
         }
         .privacypolicy_sec01 .panel .panel_in li:nth-child(1) {
-            background-image: url(../img/privacypolicy/icon_privacy02_panel_in.png);
+            background-image: url(../img/privacypolicy/icon_privacy_panel_in01.jpg);
             background-repeat: no-repeat;
             background-position: left;
             background-position: 0 4px;
         }
         .privacypolicy_sec01 .panel .panel_in li:nth-child(2) {
-            background-image: url(../img/privacypolicy/icon_privacy02_panel_in.png);
+            background-image: url(../img/privacypolicy/icon_privacy_panel_in02.jpg);
             background-repeat: no-repeat;
             background-position: left;
             background-position: 0 4px;
         }
         .privacypolicy_sec01 .panel .panel_in li:nth-child(3) {
-            background-image: url(../img/privacypolicy/icon_privacy02_panel_in.png);
+            background-image: url(../img/privacypolicy/icon_privacy_panel_in03.jpg);
             background-repeat: no-repeat;
             background-position: left;
             background-position: 0 4px;
@@ -492,8 +500,6 @@ p {
     ****************************************************/
         #contents .table01 {
             width: 100%;
-            margin-top: 23px;
-            margin-bottom: 83px;
         }
         #contents .table01 tbody tr th {
             font-size: 1.6rem;
@@ -615,6 +621,32 @@ p {
             line-height: 1.67;
             font-weight: bold;
         }
+        .company_image_introduce .img_introduce01 {
+            margin-right: 19px;
+        }
+        .company_map iframe {
+            width: 100%;
+            height: 350px;
+        }
+        .company_map dl {
+            margin-bottom: 90px;
+            margin-top: 18px;
+            font-size: 1.6rem;
+            line-height: 2;
+            letter-spacing: normal;
+        }
+        .company_map dl dt {
+            color: #0c46c1;
+            background-image: url(../img/company/icon_map_maru.jpg);
+            background-repeat: no-repeat;
+            background-position: 0;
+            padding-left: 25px;
+            font-weight: 500;
+        }
+        .company_map dl dd {
+            padding-left: 25px;
+            font-weight: 400;
+        }
 
         
             
@@ -732,7 +764,7 @@ p {
         line-height: 1.5;
     }
     /* PAGE_TITLE */
-    .page_title_product {
+    .page_title_product,.page_title_recruit,.page_title_company,.page_title_privacypolicy,.page_title_contact {
         height: 280px;
     }
 }
@@ -740,8 +772,24 @@ p {
     #header h1 a img {
         width: 250px;
     }
-    .page_title_product {
+    .page_title_product,.page_title_recruit,.page_title_company,.page_title_privacypolicy,.page_title_contact {
         height: 250px;
+    }
+    .img_introduce01 ,.img_introduce02 {
+        width: 100%;
+    }
+    .menu_collapse img {
+        right: 2rem;
+    }
+    .company_map iframe {
+        height: 200px;
+    }
+    /* COMMON */
+    .pagetop img {
+        padding: 12px 0 8px 0;
+    }
+    .ttl_common_section {
+        font-size: 2rem;
     }
 }
 /****************************************************
@@ -877,6 +925,26 @@ p {
             bottom: -82px;
             right: 69px;
         }
+    /****************************************************
+    * PAGE COMPANY CONTENT
+    ****************************************************/
+        .company_image_introduce {
+            text-align: center;
+        }
+        .company_image_introduce .img_introduce01 {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        .company_map {
+            width: 100%;
+        }
+        .box_common_infor .box_company,#contents .table01 tbody tr th,#contents .table01 tbody tr td,.company_map dl {
+            font-size: 1.4rem;
+        }
+        .company_map dl {
+            margin-bottom: 40px;
+        }
+        
 }
 @media screen and (max-width:1120px) and (min-width:769px) {
     .product_orange_book {

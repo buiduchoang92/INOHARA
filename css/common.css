@@ -155,6 +155,12 @@
     .mt-24 {
         margin-top: 24px;
     }
+    .mt-30 {
+        margin-top: 30px;
+    }
+    .mt-38 {
+        margin-top: 38px;
+    }
     .mt-40 {
         margin-top: 40px;
     }
@@ -164,10 +170,24 @@
     .mt-70 {
         margin-top: 70px;
     }
+    .mb-28 {
+        margin-bottom: 28px;
+    }
+    .mb-32 {
+        margin-bottom: 32px;
+    }
     .mb-35 {
         margin-bottom: 35px;
     }
-
+    .mb-42 {
+        margin-bottom: 42px;
+    }
+    .mb-50 {
+        margin-bottom: 50px;
+    }
+    .mb-83 {
+        margin-bottom: 83px;
+    }
     /* PADDING STYLE SETTING */
     .pb-20 {
         padding-bottom: 20px;
