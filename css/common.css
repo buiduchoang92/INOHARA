@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/****************************************************
+ * Stylesheet
+ *
+ * 1. RESET SETIING
+ * 2. BASIC SETTING
+ * 3. UTILITY SETTING
+ * 4. PRINTING SETTING
+ * 5. KEYFRAME SETTING
+ *
+ * ※ブレイクポイントは640pxになっていますので、サイトに合わせて変更してください
+ ****************************************************/
+/****************************************************
+ * 1.RESET SETTING
+ ****************************************************/
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, 
+ figure, figcaption, footer, header, hgroup, 
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, 
+ footer, header, hgroup, menu, nav, section {
+     display: block;
+ }
+ body {
+     line-height: 1;
+ }
+ ol, ul {
+     list-style: none;
+ }
+ blockquote, q {
+     quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+     content: '';
+     content: none;
+ }
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ /****************************************************
+ * 2.BASIC SETTING
+ ****************************************************/
+ .bgWhite {
+    background-color: #ffffff;
+}
+.bgGray {
+    background-color: #6a5b42;
+}
+.bgBrown {
+    background-color: #E3E3E3;
+}
+.bgBlue {
+    background-color: #0054A7;
+}
+.bgBlack {
+    background-color: #1d1d1e;
+}
+.colorWhite {
+    color: #ffffff;
+}
+.colorBlur {
+    color: #0054a7;
+}
+.colorBrown {
+    color: #1D1D1E;
+}
+.colorGray {
+    color: #6A5B42;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-one-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.text-500 {
+    font-weight: 500;
+}
+.text-bold {
+    font-weight: bold
+}
+.d-flex {
+    display: flex;
+}
+
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.justify-content-flex-start {
+    justify-content: flex-start;
+}
+
+.align-items {
+    align-items: center;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+.font-weight-bold {
+    font-weight: bold;
+}
+.font-weight-normal {
+    font-weight: 400;
+}
+ /****************************************************
+ * 3.UTILITY SETTING
+ ****************************************************/
+    /* MARGIN STYLE SETTING */
+    .mt-24 {
+        margin-top: 24px;
+    }
+    .mt-30 {
+        margin-top: 30px;
+    }
+    .mt-38 {
+        margin-top: 38px;
+    }
+    .mt-40 {
+        margin-top: 40px;
+    }
+    .mt-50 {
+        margin-top: 50px;
+    }
+    .mt-70 {
+        margin-top: 70px;
+    }
+    .mb-28 {
+        margin-bottom: 28px;
+    }
+    .mb-32 {
+        margin-bottom: 32px;
+    }
+    .mb-35 {
+        margin-bottom: 35px;
+    }
+    .mb-42 {
+        margin-bottom: 42px;
+    }
+    .mb-50 {
+        margin-bottom: 50px;
+    }
+    .mb-83 {
+        margin-bottom: 83px;
+    }
+    /* PADDING STYLE SETTING */
+    .pb-20 {
+        padding-bottom: 20px;
+    }
+/****************************************************
+ * 4. PRINTING SETTING
+ ****************************************************/
+ /****************************************************
+ * 5. KEYFRAME SETTING
+ ****************************************************/
