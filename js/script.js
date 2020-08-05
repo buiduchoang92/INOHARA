@@ -6,7 +6,7 @@ function _handleScroll() {
 }
 
 /*click pagetop */
-var topModoru = $('#footer .pagetop a');
+var topModoru = $('#footer .pagetop img');
 topModoru.on('click', function() {
 	$("html, body").animate({
 		scrollTop: 0
@@ -35,14 +35,14 @@ function toggleMenu() {
   $(document).ready(function() {
     $("#formContact").validate({
         rules: {
-			personal_name: "requierd",
-            email: "required",
-			content_contact: "required"
+			"personal_name": {required:true},
+            "email": {required:true},
+			"content_contact": {required:true}
         },
         messages: {
-            personal_name: "未入力です。",
-            email: "未入力です。",
-            content_contact: "未入力です。"
+            "personal_name":{required: "未入力です。"},
+            "email": {required: "未入力です。"},
+            "content_contact":{required: "未入力です。"}
         }
     });
 });

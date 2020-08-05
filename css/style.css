@@ -153,38 +153,53 @@ p {
 }
 /* PAGE TITLE */
 .page_title_contact {
-    background-image: url(../img/common/bg_common_page_ttl_contact.png);
-    height: 393px;
-    background-position: center -5px;
+    background-image: url(../img/common/bg_page_title_pc.png);
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .page_title_privacypolicy {
-    background-image: url(../img/common/bg_common_page_ttl_privacypolicy.png);
-    height: 393px;
-    background-position: center -5px;
+    background-image: url(../img/common/bg_page_title_pc.png);
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .page_title_recruit {
-    background-image: url(../img/common/bg_common_page_ttl_recruit.png);
-    height: 393px;
-    background-position: center -5px;
+    background-image: url(../img/common/bg_page_title_pc.png);
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .page_title_product {
-    background-image: url(../img/common/bg_common_page_ttl_product.png);
-    height: 393px;
-    background-position: center -5px;
+    background-image: url(../img/common/bg_page_title_pc.png);
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .page_title_company {
-    background-image: url(../img/common/bg_common_page_ttl_company.png);
-    height: 393px;
-    background-position: center -5px;
+    background-image: url(../img/common/bg_page_title_pc.png);
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .page_title_sitemap {
-    background-image: url(../img/common/bg_common_page_ttl_sitemap.png);
-    height: 393px;
-    background-position: center -5px;
+    background-image: url(../img/common/bg_page_title_pc.png);
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page_title_sitemap h2,.page_title_company h2, .page_title_product h2,.page_title_recruit h2,.page_title_privacypolicy h2,.page_title_contact h2{
+    padding: 88px 0 87px 0;
+    text-align: center;
 }
 .breadcrumb {
     background-color: #0c46c1;
-    margin-top: -147px;
 }
 .breadcrumb ul{
     display: flex;
@@ -542,12 +557,14 @@ p {
             line-height: 3.69;
             letter-spacing: 0.8px;
             color: #0c46c1;
-            width: 130px;
+            width: 107px;
             vertical-align: top;
             position: relative;
+            text-align: left;
+            padding-left: 23px;
         }
         #contents .table01 tbody tr th::after {
-            width: 100%;
+            width: 130px;
             height: 2px;
             content: '';
             background-image: url(../img/recruit/pic_recruit_table_th_bar.jpg);
@@ -585,7 +602,7 @@ p {
             width: 720px;
         }
         .ctn_product_right {
-            padding-top: 40px;
+            padding-top: 70px;
             width: 360px;
         }
         .product_sec01 .product_detail {
@@ -655,8 +672,7 @@ p {
     /****************************************************
     * PAGE COMPANY CONTENT
     ****************************************************/
-        .box_common_infor .box_company {
-            line-height: 1.67;
+        .box_common_infor .box_company p{
             font-weight: bold;
         }
         .company_image_introduce .img_introduce01 {
@@ -850,10 +866,14 @@ p {
     }
     /* PAGE_TITLE */
     .page_title_product,.page_title_recruit,.page_title_company,.page_title_privacypolicy,.page_title_contact,.page_title_sitemap {
-        height: 280px;
-        background-position: center -50px;
-        background-size: 180%;
-        background-repeat: no-repeat;
+        height: 180px;
+    }
+    .page_title_sitemap img,.page_title_company img, .page_title_product img,.page_title_recruit img,.page_title_privacypolicy img,.page_title_contact img{
+        height: 60px;
+    }
+    .page_title_sitemap h2,.page_title_company h2, .page_title_product h2,.page_title_recruit h2,.page_title_privacypolicy h2,.page_title_contact h2{
+        padding: 65px 0 55px 0;
+        text-align: center;
     }
 }
 @media screen and (max-width:640px) {
@@ -861,9 +881,14 @@ p {
         width: 250px;
     }
     .page_title_product,.page_title_recruit,.page_title_company,.page_title_privacypolicy,.page_title_contact,.page_title_sitemap {
-        height: 250px;
-        background-position: center -29px;
-        background-size: cover;
+        height: 110px;
+    }
+    .page_title_sitemap h2,.page_title_company h2, .page_title_product h2,.page_title_recruit h2,.page_title_privacypolicy h2,.page_title_contact h2{
+        padding: 31px 0 27px 0;
+        text-align: center;
+    }
+    .page_title_sitemap img,.page_title_company img, .page_title_product img,.page_title_recruit img,.page_title_privacypolicy img,.page_title_contact img{
+        height: 50px;
     }
     .img_introduce01 ,.img_introduce02 {
         width: 100%;
@@ -1050,6 +1075,10 @@ p {
     * PAGE COMPANY CONTENT
     ****************************************************/
         #contents .table01 tbody tr th {
+            width: 82px;
+            padding-left: 18px;
+        }
+        #contents .table01 tbody tr th::after {
             width: 100px;
         }
         .company_image_introduce {
