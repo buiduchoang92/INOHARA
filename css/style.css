@@ -87,6 +87,10 @@ p {
     text-decoration: none;
     color: #333333;
 }
+.gNav_wrapper ul li a:hover {
+    transition: 0.3s;
+    color: #0c46c1;
+}
 .mail_contact {
     height: 70px;
 }
@@ -132,7 +136,13 @@ p {
     text-decoration: none;
     margin-left: 32px;
 }
-
+.ft_menu a:hover {
+    transition: 0.3s;
+    text-decoration: underline;
+}
+.ft_menu a:first-child,.ft_menu a:nth-child(5) {
+    margin-left: 0;
+}
 .ft_copyright p {
     font-size: 1.2rem;
     font-weight: 400;
@@ -144,28 +154,33 @@ p {
 /* PAGE TITLE */
 .page_title_contact {
     background-image: url(../img/common/bg_common_page_ttl_contact.png);
-    height: 333px;
-    background-position: center;
+    height: 393px;
+    background-position: center -5px;
 }
 .page_title_privacypolicy {
     background-image: url(../img/common/bg_common_page_ttl_privacypolicy.png);
-    height: 333px;
-    background-position: center;
+    height: 393px;
+    background-position: center -5px;
 }
 .page_title_recruit {
     background-image: url(../img/common/bg_common_page_ttl_recruit.png);
-    height: 333px;
-    background-position: center;
+    height: 393px;
+    background-position: center -5px;
 }
 .page_title_product {
     background-image: url(../img/common/bg_common_page_ttl_product.png);
-    height: 333px;
-    background-position: center;
+    height: 393px;
+    background-position: center -5px;
 }
 .page_title_company {
     background-image: url(../img/common/bg_common_page_ttl_company.png);
-    height: 333px;
-    background-position: center;
+    height: 393px;
+    background-position: center -5px;
+}
+.page_title_sitemap {
+    background-image: url(../img/common/bg_common_page_ttl_sitemap.png);
+    height: 393px;
+    background-position: center -5px;
 }
 .breadcrumb {
     background-color: #0c46c1;
@@ -177,6 +192,7 @@ p {
     font-weight: 400;
     line-height: 2;
     letter-spacing: normal;
+    padding: 4px 0;
 }
 .breadcrumb li:first-child:after {
     content: ">";
@@ -189,7 +205,6 @@ p {
 }
 /* BOX INFOR */
 .box_common_infor {
-    border: solid 1px #c2d1ef;
     background-color: #f0f4fb;
     padding: 30px 31px 30px 31px;
 }
@@ -215,7 +230,7 @@ p {
     color: #333333;
 }
 
-.box_common_infor a:first-child {
+.box_common_infor .contact_tell {
     margin-right: 30px;
 }
 .box_common_infor .add_icon {
@@ -266,7 +281,7 @@ p {
             letter-spacing: 4px;
             color: #333333;
         }
-        .top_sec01 h2 p {
+        .top_sec01 h2 span {
             padding: 5.5px 18px;
             margin-left: 18px;
         }
@@ -293,8 +308,9 @@ p {
             text-align: center;
             background-repeat: no-repeat;
             background-position: bottom;
-            padding-top: 94px;
+            padding-top: 87px;
             padding-bottom: 200px;
+            
         }
         .ttl_top_section {
             font-size: 4.5rem;
@@ -360,25 +376,43 @@ p {
         .mailform_contact p span {
             color: #c92c2c;
         }
+        .mailform_contact p a {
+            text-decoration: none;
+            color: #333333;
+            border-bottom: 1px solid #656565;
+        }
         .table {
             width: 100%;
         }
         .table tbody tr th {
-            width: 220px;
+            width: 200px;
             background-color: #0c46c1;
-            vertical-align: top;
+            vertical-align: middle;
             border-bottom: solid 1px #ffffff;
             font-size: 1.6rem;
             font-weight: 500;
             line-height: 4.88;
             letter-spacing: 0.8px;
             color: #ffffff;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .table tbody tr th img {
+           float: right;
+           border-radius: 5px;
+           margin-right: 20px;
+           margin-top: 28px;
         }
         .table tbody tr td {
             padding: 20px;
             background-color: #f0f4fb;
             vertical-align: middle;
             border-bottom: solid 1px #ffffff;
+        }
+        .table tbody tr .error {
+            color: #c10c0c;
+            font-size: 1.3rem;
+
         }
         .table input[type="text"] {
             width: 97%;
@@ -458,16 +492,17 @@ p {
             letter-spacing: 1.8px;
             color: #333333;
             padding-left: 35px;
+            padding-bottom: 10px;
         }
         .privacypolicy_sec01 .panel {
             background-color: #f0f4fb;
             margin-top: 27px;
-            padding: 23px;
+            padding: 26px 28px 22px 28px;
         }
         .privacypolicy_sec01 .panel .panel_in {
             background-color: #ffffff;
             margin-top: 15px;
-            padding: 20px;
+            padding: 16px 21px;
         }
         .privacypolicy_sec01 .panel .panel_in li {
             font-size: 1.6rem;
@@ -516,6 +551,7 @@ p {
             height: 2px;
             content: '';
             background-image: url(../img/recruit/pic_recruit_table_th_bar.jpg);
+            background-position: center;
             position: absolute;
             bottom: -1px;
             left: 0;
@@ -527,7 +563,7 @@ p {
             letter-spacing: normal;
             color: #333333;
             padding-left: 21px;
-            border-bottom: 1px solid #f0f4fb;
+            border-bottom: 2px solid #f0f4fb;
         }
         #contents .table01 tbody tr:last-child td,#contents .table01 tbody tr:nth-child(4) td,#contents .table01 tbody tr:nth-child(6) td {
             line-height: 2;
@@ -543,11 +579,13 @@ p {
         .ctn_product {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 50px;
         }
         .ctn_product_left {
             width: 720px;
         }
         .ctn_product_right {
+            padding-top: 40px;
             width: 360px;
         }
         .product_sec01 .product_detail {
@@ -558,6 +596,7 @@ p {
             margin-bottom: 18px;
             position: relative;
             padding-left: 19px;
+            margin-top: 31px;
         }
         .product_sec01 .product_detail::before {
             content: '';
@@ -576,7 +615,6 @@ p {
             color: #333333;
             border: 1px solid #f0f4fb;
             padding: 21px;
-            margin-bottom: 26px;
         }
         .product_sec01 .ctn_product_right img {
             width: 100%;
@@ -647,7 +685,44 @@ p {
             padding-left: 25px;
             font-weight: 400;
         }
-
+    /****************************************************
+    * PAGE SITEMAP CONTENT
+    ****************************************************/
+        .box_common_infor ul li a::before {
+            content: '>';
+            color: #0c46c1;
+            width: 7px;
+            height: 12px;
+            padding-right: 12px;
+        }
+        .box_common_infor ul li a {
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 1.78;
+            letter-spacing: 1.8px;
+            color: #333333;
+            text-decoration: none;
+            padding-left: 22px;
+        }
+        .box_common_infor ul li {
+            background-color: #ffffff;
+            padding: 24px 0;
+            width: 335px;
+            margin: 0 20px 31px 0;
+            display: inline-block;
+        }
+        .box_common_infor ul li:first-child {
+            display: block;
+        }
+        .box_common_infor ul li:nth-child(2),.box_common_infor ul li:nth-child(3) {
+            display: none;
+        }
+        .box_common_infor ul li:nth-child(7),.box_common_infor ul li:nth-child(8),.box_common_infor ul li:nth-child(9) {
+            margin-bottom: 0;
+        }
+        .box_common_infor ul li:nth-child(6),.box_common_infor ul li:nth-child(9) {
+            margin-right: 0;
+        }
         
             
 /****************************************************
@@ -696,11 +771,11 @@ p {
         will-change: transform;
         transform: translateX(100%);
         display: block;
-        width: 70%;
+        width: 100%;
         height: 100vh;
         overflow: scroll;
     }
-    #gNav.gNav_wrapper.is_open {
+    #gNav.gNav_wrapper.open {
         transform: translateX(0);
         background-color: #b9d2fe;
     }
@@ -735,14 +810,14 @@ p {
     }
     .ft_info {
         text-align: center;
-        margin: 25px 0;
+        margin: 19px 0;
     }
     .ft_menu {
         text-align: center;
         width: 100%;
         border-top: solid 1px #ffffff;
         border-bottom: solid 1px #ffffff;
-        padding: 5px 0;
+        padding: 7px 0;
         margin-top: 0;
     }
     .ft_info p {
@@ -750,30 +825,45 @@ p {
     }
     .ft_menu a {
         margin: 0 10px;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+    .ft_menu a:first-child, .ft_menu a:nth-child(5) {
+        margin-left: 10px;
     }
     .ft_copyright {
-        padding-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     /* BOX */
     .ttl_common_section {
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         font-size: 2.5rem;
-        background-position: 0 3px;
+        background-position: left;
         line-height: 1.5;
+        background-size: 22px;
+        padding-left: 33px;
+    }
+    .box_common_infor {
+        padding: 20px 21px 20px 21px;
     }
     /* PAGE_TITLE */
-    .page_title_product,.page_title_recruit,.page_title_company,.page_title_privacypolicy,.page_title_contact {
+    .page_title_product,.page_title_recruit,.page_title_company,.page_title_privacypolicy,.page_title_contact,.page_title_sitemap {
         height: 280px;
+        background-position: center -50px;
+        background-size: 180%;
+        background-repeat: no-repeat;
     }
 }
 @media screen and (max-width:640px) {
     #header h1 a img {
         width: 250px;
     }
-    .page_title_product,.page_title_recruit,.page_title_company,.page_title_privacypolicy,.page_title_contact {
+    .page_title_product,.page_title_recruit,.page_title_company,.page_title_privacypolicy,.page_title_contact,.page_title_sitemap {
         height: 250px;
+        background-position: center -29px;
+        background-size: cover;
     }
     .img_introduce01 ,.img_introduce02 {
         width: 100%;
@@ -791,6 +881,7 @@ p {
     .ttl_common_section {
         font-size: 2rem;
     }
+
 }
 /****************************************************
  * 8.CONTENT FOR SP
@@ -831,6 +922,10 @@ p {
         .common_sec a img,.common_sec01 a img {
             width: 94%;
         }
+        /* BOX */
+        .box_common_infor .box_text,.box_common_infor p {
+            font-size: 1.4rem;
+        }
     /****************************************************
     * PAGECONTACT CONTENT
     ****************************************************/
@@ -841,6 +936,12 @@ p {
         .table tbody tr th {
             width: 30%;
             line-height: 1.5;
+            padding-left: 5px;
+            font-size: 1.4rem;
+        }
+        .table tbody tr th img {
+            margin-top: 0;
+            margin-right: 15px;
         }
         .table tbody tr td {
             padding: 12px;
@@ -874,28 +975,41 @@ p {
     * PAGE RECRUIT CONTENT
     ****************************************************/
         #contents .table01 {
-            margin-bottom: 50px;
+            margin-top: 0;
+            margin-bottom: 25px;
         }
         .box_common_infor .box_in_infor {
-            padding: 27px 0 19px 11px;
+            padding: 19px 11px 15px 11px;
+        }
+        .box_common_infor .box_in_infor a img {
+            width: 91%;
+        }
+        .box_common_infor .add_icon {
+            font-size: 1.6rem;
         }
     /****************************************************
     * PAGE PRODUCT CONTENT
     ****************************************************/
-        .product_sec01 .product_detail { font-size: 2rem; }
+        .product_sec01 .product_detail { 
+            font-size: 1.9rem; 
+            margin-top: 19px;
+        }
         .ctn_product_left p { 
             font-size: 1.4rem;
             line-height: 1.5;
             padding: 15px;
-            margin-bottom: 18px;
+        }
+        .ctn_product {
+            margin-bottom: 30px;
+            display: block;
         }
         .ctn_product_left { 
             width: 100%; 
         }
-        .ctn_product { display: block; }
         .product_sec01 .ctn_product_right {
             width: 100%;
             letter-spacing: -9px;
+            padding-top: 20px;
         }
         .product_sec01 .ctn_product_right img {
             width: 48%;
@@ -907,9 +1021,16 @@ p {
         .table02 tbody tr {
             display: inline;
         }
+        .box_common_infor span {
+            font-size: 1.6rem;
+        }
+        .box_common_infor .ttl_product_box {
+            font-size: 1.4rem;
+        }
         .table02 tbody tr td {
             display: inline-block;
             margin: 3px;
+            font-size: 1.4rem;
         }
         .table02 tbody tr td::before {
             content: '・';
@@ -923,13 +1044,17 @@ p {
         }
         .table02 tbody tr .product_orange_book {
             bottom: -82px;
-            right: 69px;
+            left: 0;
         }
     /****************************************************
     * PAGE COMPANY CONTENT
     ****************************************************/
+        #contents .table01 tbody tr th {
+            width: 100px;
+        }
         .company_image_introduce {
             text-align: center;
+            margin-bottom: 30px;
         }
         .company_image_introduce .img_introduce01 {
             margin-right: 0;
@@ -942,13 +1067,32 @@ p {
             font-size: 1.4rem;
         }
         .company_map dl {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
-        
+        .box_common_infor ul li {
+            width: 100%;
+            margin: 0 0 15px 0;
+            padding: 10px 0;
+        }
+        .box_common_infor ul li:nth-child(7),.box_common_infor ul li:nth-child(8) {
+            margin-bottom: 15px;
+        }
+        .box_common_infor ul li a {
+            font-size: 1.6rem;
+        }
 }
 @media screen and (max-width:1120px) and (min-width:769px) {
     .product_orange_book {
         right: 142px;
     }
     .ctn_product_left { width: 680px;}
+    .box_common_infor ul li {
+        width: 313px;
+    }
+    .ft_menu a:last-child {
+        margin-left: 0;
+    }
+    .ft_menu a:nth-child(6) {
+        margin-right: 12px;
+    }
 }

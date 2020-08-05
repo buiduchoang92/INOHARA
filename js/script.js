@@ -16,14 +16,15 @@ topModoru.on('click', function() {
 /* click toggle */
 function toggleMenu() {
 	$("#header #toggle").on("click", function () {
-	  $("#gNav").toggleClass("is_open");
+	  $("#gNav").toggleClass("open");
 	  $(this).toggleClass("on");
 	});
+
   }
   function removeMemuOnSp() {
 	var windowSize = window.innerWidth;
-	if ($("#gNav.is_open").length > 0 && windowSize > 768) {
-	  $("#gNav").removeClass("is_open");
+	if ($("#gNav.open").length > 0 && windowSize > 768) {
+	  $("#gNav").removeClass("open");
 	  $("#toggle").removeClass("on");
 	}
   }
@@ -31,3 +32,17 @@ function toggleMenu() {
   $(window).resize(function () {
 	removeMemuOnSp();
   });
+  $(document).ready(function() {
+    $("#formContact").validate({
+        rules: {
+			personal_name: "requierd",
+            email: "required",
+			content_contact: "required"
+        },
+        messages: {
+            personal_name: "未入力です。",
+            email: "未入力です。",
+            content_contact: "未入力です。"
+        }
+    });
+});
