@@ -152,6 +152,9 @@
  * 3.UTILITY SETTING
  ****************************************************/
     /* MARGIN STYLE SETTING */
+    .mt-13 {
+        margin-bottom: 13px;
+    }
     .mt-24 {
         margin-top: 24px;
     }
@@ -170,6 +173,7 @@
     .mt-70 {
         margin-top: 70px;
     }
+
     .mb-28 {
         margin-bottom: 28px;
     }
@@ -192,6 +196,9 @@
         margin-bottom: 100px;
     }
     /* PADDING STYLE SETTING */
+    .pt-10 {
+        padding-top: 10px;
+    }
     .pb-4 {
         padding-bottom: 4px;
     }
