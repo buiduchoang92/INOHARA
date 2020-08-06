@@ -36,12 +36,12 @@ function toggleMenu() {
     $("#formContact").validate({
         rules: {
 			"personal_name": {required:true},
-            "email": {required:true},
+            "email": {required:true,email:true},
 			"content_contact": {required:true}
         },
         messages: {
             "personal_name":{required: "未入力です。"},
-            "email": {required: "未入力です。"},
+            "email": {required: "未入力です。", email: "入力に誤りがあります。"},
             "content_contact":{required: "未入力です。"}
         }
     });
