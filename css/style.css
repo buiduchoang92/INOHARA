@@ -123,7 +123,7 @@ p {
     color: #ffffff;
 }
 .ft_menu {
-    width: 39%;
+    width: 41%;
     display: inline-block;
 }
 .ft_menu a {
@@ -134,7 +134,7 @@ p {
     letter-spacing: normal;
     color: #ffffff;
     text-decoration: none;
-    margin-left: 32px;
+    margin-left: 30px;
 }
 .ft_menu a:hover {
     transition: 0.3s;
@@ -875,6 +875,17 @@ p {
         padding: 65px 0 55px 0;
         text-align: center;
     }
+    /* BREACRUMB */
+    .breadcrumb ul {
+        font-size: 1.4rem;
+    }
+    /*PAGE TOP */
+    .pagetop img {
+        padding: 5px 0 2px 0;
+    }
+    .pagetop_img {
+        height: 30px;
+    }
 }
 @media screen and (max-width:640px) {
     #header h1 a img {
@@ -899,10 +910,12 @@ p {
     .company_map iframe {
         height: 200px;
     }
-    /* COMMON */
-    .pagetop img {
-        padding: 12px 0 8px 0;
+    #btn_common_contact_img {
+        width: 100%;
+        height: 60px;
     }
+    /* COMMON */
+
     .ttl_common_section {
         font-size: 2rem;
     }
@@ -933,6 +946,11 @@ p {
         }
         .icon_ttl_top_section {
             margin: 20px 0;
+            font-size: 1.6rem;
+            padding: 3px 0;
+        }
+        .top_sec01 .icon_top_news {
+            font-size: 1.4rem;
         }
         .txt_ttl_top_section {
             font-size: 1.6rem;
@@ -943,9 +961,12 @@ p {
         .top_sec03 {
             padding-bottom: 60px;
         }
+        .btn_img_top_more {
+            width: 240px;
+        }
         .common_sec,.common_sec01 { padding: 40px 0;}
         .common_sec a img,.common_sec01 a img {
-            width: 94%;
+            width: 86%;
         }
         /* BOX */
         .box_common_infor .box_text,.box_common_infor p {
@@ -1109,6 +1130,9 @@ p {
         .box_common_infor ul li a {
             font-size: 1.6rem;
         }
+        #box_common_company {
+            margin-top: 30px;
+        }
 }
 @media screen and (max-width:1120px) and (min-width:769px) {
     .product_orange_book {
@@ -1118,10 +1142,5 @@ p {
     .box_common_infor ul li {
         width: 313px;
     }
-    .ft_menu a:last-child {
-        margin-left: 0;
-    }
-    .ft_menu a:nth-child(6) {
-        margin-right: 12px;
-    }
+
 }
