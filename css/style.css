@@ -44,7 +44,7 @@ p {
  .inner {
     max-width: 1120px;
     margin: 0 auto;
-    width: 94%;
+    width: 98%;
 }
 .container {
     min-width: 1120px;
@@ -67,7 +67,7 @@ p {
     z-index: 10;
 }
 #header h1 {
-    margin-left: 10px;
+    margin-left: 23px;
 }
 .gNav_wrapper ul {
     display: flex;
@@ -109,7 +109,7 @@ p {
     text-align: center;
 }
 .pagetop img {
-    padding: 22px 0 18px 0;
+    padding: 21px 0 18px 0;
     cursor: pointer;
 }
 .ft_content {
@@ -122,9 +122,13 @@ p {
     letter-spacing: normal;
     color: #ffffff;
 }
+.ft_content .company_dct {
+    padding-top: 8px;
+}
 .ft_menu {
-    width: 41%;
+    width: 38.89%;
     display: inline-block;
+    margin-top: 47px;
 }
 .ft_menu a {
     display: inline-block;
@@ -134,14 +138,14 @@ p {
     letter-spacing: normal;
     color: #ffffff;
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 33px;
 }
 .ft_menu a:hover {
     transition: 0.3s;
     text-decoration: underline;
 }
 .ft_menu a:first-child,.ft_menu a:nth-child(5) {
-    margin-left: 0;
+    margin-left: 2px;
 }
 .ft_copyright p {
     font-size: 1.2rem;
@@ -151,51 +155,54 @@ p {
     color: #ffffff;
     text-align: center;
 }
+.ft_info {
+    margin: 40px 0 25px;
+}
 /* PAGE TITLE */
 .page_title_contact {
     background-image: url(../img/common/bg_page_title_pc.png);
-    height: 250px;
+    height: 178px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .page_title_privacypolicy {
     background-image: url(../img/common/bg_page_title_pc.png);
-    height: 250px;
+    height: 178px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .page_title_recruit {
     background-image: url(../img/common/bg_page_title_pc.png);
-    height: 250px;
+    height: 178px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .page_title_product {
     background-image: url(../img/common/bg_page_title_pc.png);
-    height: 250px;
+    height: 178px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .page_title_company {
     background-image: url(../img/common/bg_page_title_pc.png);
-    height: 250px;
+    height: 178px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .page_title_sitemap {
     background-image: url(../img/common/bg_page_title_pc.png);
-    height: 250px;
+    height: 178px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .page_title_sitemap h2,.page_title_company h2, .page_title_product h2,.page_title_recruit h2,.page_title_privacypolicy h2,.page_title_contact h2{
-    padding: 88px 0 87px 0;
+    padding: 57px 0 47px 0;
     text-align: center;
 }
 .breadcrumb {
@@ -209,10 +216,16 @@ p {
     letter-spacing: normal;
     padding: 4px 0;
 }
-.breadcrumb li:first-child:after {
-    content: ">";
+.breadcrumb ul li:first-child:after {
+    content: '';
+    background-image: url('../img/company/icon_arow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
     margin: 0 21px;
     color: #ffffff;
+    width: 7px;
+    height: 10px;
 }
 .breadcrumb li a {
     text-decoration: none;
@@ -234,7 +247,8 @@ p {
     background-position: 0 15px;
     border-bottom: dashed 1px #b9d2fe;
     padding-left: 43px;
-    margin-top: 87px;
+    margin-top: 85px;
+    padding-bottom: 2px;
 }
 .box_common_infor .box_text {
     display: flex;
@@ -246,7 +260,7 @@ p {
 }
 
 .box_common_infor .contact_tell {
-    margin-right: 30px;
+    margin-right: 27px;
 }
 .box_common_infor .add_icon {
     background-image: url(../img/recruit/icon_recruit01.jpg);
@@ -258,6 +272,7 @@ p {
     letter-spacing: 1.8px;
     color: #333333;
     padding-left: 40px;
+    padding-bottom: 7px;
 }
 .box_common_infor p {
     font-size: 1.6rem;
@@ -267,7 +282,7 @@ p {
 }
 /* BUTTON TO CONTACT */
 .common_sec {
-    padding: 100px 0;
+    padding: 64px 0 99px;
     text-align: center;
 }
 .common_sec01 {
@@ -295,6 +310,7 @@ p {
             font-weight: 500;
             letter-spacing: 4px;
             color: #333333;
+            padding-left: 30px;
         }
         .top_sec01 h2 span {
             padding: 5.5px 18px;
@@ -322,10 +338,9 @@ p {
             background-image: url(../img/top/bg_top_sec02.jpg);
             text-align: center;
             background-repeat: no-repeat;
-            background-position: bottom;
-            padding-top: 87px;
-            padding-bottom: 200px;
-            
+            background-position: center;
+            padding-top: 91px;
+            height: 534px;
         }
         .ttl_top_section {
             font-size: 4.5rem;
@@ -358,18 +373,25 @@ p {
             text-align: center;
             background-repeat: no-repeat;
             background-position: center;
-            margin-top: -150px;
-            padding: 175px 0 118px 0;
+            margin-top: -166px;
+            height: 565px;
+            padding-top: 106px;
         }
         .top_sec04 {
             background-image: url(../img/top/bg_top_sec04.png );
             text-align: center;
             background-repeat: no-repeat;
             background-position: center;
-            margin-top: -12px;
-            padding: 175px 0 50px 0;
+            margin-top: -75px;
+            padding-top: 90px;
+            height: 545px;
         }
-
+        .top_sec03 .wrapper_recruit {
+            padding-top: 84px;
+        }
+        .top_sec04 .wrapper_product {
+            padding-top: 75px;
+        }
         a img {
             -moz-transition: opacity 0.3s;
             -o-transition: opacity 0.3s;
@@ -379,14 +401,23 @@ p {
     /****************************************************
     * PAGECONTACT CONTENT
     ****************************************************/
-
+        .contact_sec02 .ttl_common_section {
+            margin-bottom: 25px;
+        }
+        .contact_sec01 .box_common_infor {
+            border: 1px solid #c2d1ef;
+            padding: 28px 30px 28px 30px;
+        }
+        .contact_sec02 .mailform_contact {
+            padding-top: 6px;
+        }
         .mailform_contact p {
             font-size: 1.6rem;
             font-weight: 400;
             line-height: 2;
             letter-spacing: normal;
             color: #333333;
-            margin-bottom: 41px;
+            margin-bottom: 40px;
         }
         .mailform_contact p span {
             color: #c92c2c;
@@ -395,18 +426,19 @@ p {
             text-decoration: none;
             color: #333333;
             border-bottom: 1px solid #656565;
+            padding-bottom: 3px;
         }
         .table {
             width: 100%;
         }
         .table tbody tr th {
-            width: 200px;
+            width: 190px;
             background-color: #0c46c1;
             vertical-align: middle;
             border-bottom: solid 1px #ffffff;
             font-size: 1.6rem;
             font-weight: 500;
-            line-height: 4.88;
+            line-height: 4.5;
             letter-spacing: 0.8px;
             color: #ffffff;
             text-align: left;
@@ -414,9 +446,9 @@ p {
         }
         .table tbody tr th img {
            float: right;
-           border-radius: 5px;
+           border-radius: 4px;
            margin-right: 20px;
-           margin-top: 28px;
+           margin-top: 25px;
         }
         .table tbody tr td {
             padding: 20px;
@@ -442,7 +474,7 @@ p {
             padding-right: 20px;
         }
         .contact_sec02 .submit {
-            margin: 50px 0 100px 0;
+            margin: 49px 0 100px 0;
         }
         .submit input[type="submit"] {
             font-size: 1.6rem;
@@ -466,7 +498,7 @@ p {
     * PAGECPRIVACYPOLICY CONTENT
     ****************************************************/
         .privacypolicy_sec01 {
-            margin: 87px 0 100px 0;
+            margin-bottom: 100px;
         }
         .privacypolicy_sec01 p {
             font-size: 1.6rem;
@@ -506,18 +538,21 @@ p {
             line-height: 1.78;
             letter-spacing: 1.8px;
             color: #333333;
-            padding-left: 35px;
-            padding-bottom: 10px;
+            padding-left: 39px;
+            padding-bottom: 8px;
         }
         .privacypolicy_sec01 .panel {
             background-color: #f0f4fb;
-            margin-top: 27px;
+            margin-top: 30px;
             padding: 26px 28px 22px 28px;
+        }
+        .privacypolicy_sec01 .panel:nth-child(3),.privacypolicy_sec01 .panel:nth-child(4),.privacypolicy_sec01 .panel:nth-child(5) {
+            padding-bottom: 25px;
         }
         .privacypolicy_sec01 .panel .panel_in {
             background-color: #ffffff;
-            margin-top: 15px;
-            padding: 16px 21px;
+            margin-top: 13px;
+            padding: 15px 21px;
         }
         .privacypolicy_sec01 .panel .panel_in li {
             font-size: 1.6rem;
@@ -526,6 +561,9 @@ p {
             letter-spacing: 0.8px;
             color: #333333;
             padding-left: 35px;
+        }
+        .privacypolicy_sec01 ol .padding_bottom {
+            padding-bottom: 30px;
         }
         .privacypolicy_sec01 .panel .panel_in li:nth-child(1) {
             background-image: url(../img/privacypolicy/icon_privacy_panel_in01.jpg);
@@ -548,20 +586,25 @@ p {
     /****************************************************
     * PAGE RECRUIT CONTENT
     ****************************************************/
+        .recruit_sec01 .table01 {
+            margin-top: 25px;
+            margin-bottom: 83px;
+        }
         #contents .table01 {
             width: 100%;
         }
-        #contents .table01 tbody tr th {
+        .table01 tbody tr th {
             font-size: 1.6rem;
             font-weight: 500;
-            line-height: 3.69;
+            line-height: normal;
             letter-spacing: 0.8px;
             color: #0c46c1;
-            width: 107px;
+            width: 111px;
             vertical-align: top;
             position: relative;
             text-align: left;
-            padding-left: 23px;
+            padding-left: 20px;
+            padding-top: 16px;
         }
         #contents .table01 tbody tr th::after {
             width: 130px;
@@ -573,22 +616,45 @@ p {
             bottom: -1px;
             left: 0;
         }
-        #contents .table01 tbody tr td {
+        .table01 tbody tr td {
             font-size: 1.6rem;
             font-weight: 500;
-            line-height: 3.69;
+            line-height: normal;
             letter-spacing: normal;
             color: #333333;
-            padding-left: 21px;
+            padding: 16px 21px;
             border-bottom: 2px solid #f0f4fb;
+            vertical-align: top;
         }
-        #contents .table01 tbody tr:last-child td,#contents .table01 tbody tr:nth-child(4) td,#contents .table01 tbody tr:nth-child(6) td {
+
+        .table01 tbody tr:nth-child(4) td,.table01 tbody tr:nth-child(4) th {
+            line-height: 1.7;
+        }
+        .table01 tbody tr:last-child td,.table01 tbody tr:last-child th {
+            line-height: 1.8;
+        }
+        .recruit_sec01 .table01 tr:last-child td,.recruit_sec01 .table01 tr:last-child th {
             line-height: 2;
-            padding: 11px;
+            vertical-align: middle;
+            padding-top: 11px;
+            padding-bottom: 11px;
+        }
+        .recruit_sec01 .table01 tbody tr:nth-child(4) td,.table01 tbody tr:nth-child(4) th {
+            line-height: normal;
+        }
+        .company_image_introduce {
+            margin: 31px 0 50px;
+        }
+        .recruit_sec01 .box_common_infor {
+            padding: 27px 28px 30px 28px;
         }
         .box_common_infor .box_in_infor {
             background-color: #ffffff;
             padding: 32px 0 24px 22px;
+            margin-top: 15px;
+        }
+        .box_common_infor .box_in_infor p {
+            padding-top: 7px;
         }
     /****************************************************
     * PAGE PRODUCT CONTENT
@@ -602,7 +668,7 @@ p {
             width: 720px;
         }
         .ctn_product_right {
-            padding-top: 70px;
+            padding-top: 43px;
             width: 360px;
         }
         .product_sec01 .product_detail {
@@ -610,7 +676,7 @@ p {
             font-weight: 400;
             letter-spacing: normal;
             color: #333333;
-            margin-bottom: 18px;
+            margin-bottom: 21px;
             position: relative;
             padding-left: 19px;
             margin-top: 31px;
@@ -625,6 +691,9 @@ p {
             left: 0;
             top: 0;
         }
+        .ctn_product_left h4:first-child {
+            margin-top: 0;
+        }
         .ctn_product_left p {
             font-size: 1.6rem;
             font-weight: 400;
@@ -636,6 +705,15 @@ p {
         .product_sec01 .ctn_product_right img {
             width: 100%;
             margin-bottom: 20px;
+        }
+        .product_sec01 .box_common_infor {
+            padding: 21px 28px 22px 28px;
+        }
+        .product_sec01 .box_common_infor p {
+            padding-top: 3px;
+        }
+        .product_sec01 .ttl_product_fontweight {
+            font-weight: 300;
         }
         .box_common_infor span {
             font-size: 1.8rem;
@@ -656,7 +734,7 @@ p {
             table-layout: fixed;
             line-height: 2;
             position: relative;
-            margin-bottom: 100px;
+            margin-bottom: 92px;
         }
         .table02 tr td {
             font-size: 1.6rem;
@@ -672,7 +750,14 @@ p {
     /****************************************************
     * PAGE COMPANY CONTENT
     ****************************************************/
-        .box_common_infor .box_company p{
+
+        .company_sec01 .box_common_infor {
+            padding: 26px 36px 21px 29px;
+        }
+        .company_sec02 .table01 {
+            margin-top: 41px;
+        }
+        .box_common_infor .box_company p {
             font-weight: bold;
         }
         .company_image_introduce .img_introduce01 {
@@ -681,12 +766,12 @@ p {
         .company_map iframe {
             width: 100%;
             height: 350px;
+            border: 0;
         }
         .company_map dl {
-            margin-bottom: 90px;
-            margin-top: 18px;
+            margin-bottom: 98px;
             font-size: 1.6rem;
-            line-height: 2;
+            line-height: 1;
             letter-spacing: normal;
         }
         .company_map dl dt {
@@ -694,22 +779,31 @@ p {
             background-image: url(../img/company/icon_map_maru.jpg);
             background-repeat: no-repeat;
             background-position: 0;
-            padding-left: 25px;
+            padding-left: 23px;
             font-weight: 500;
+            margin-top: 30px;
         }
         .company_map dl dd {
-            padding-left: 25px;
+            margin-top: 18px;
+            padding-left: 23px;
             font-weight: 400;
         }
     /****************************************************
     * PAGE SITEMAP CONTENT
     ****************************************************/
-        .box_common_infor ul li a::before {
-            content: '>';
-            color: #0c46c1;
+        .sitemap_sec01 .ttl_common_section {
+            margin-bottom: 41px;
+        }
+        .box_common_infor ul li::before {
+            content: '';
+            background-image: url(../img/sitemap/icon_arow.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
             width: 7px;
             height: 12px;
-            padding-right: 12px;
+            margin-left: 22px;
+            margin-right: 12px;
         }
         .box_common_infor ul li a {
             font-size: 1.8rem;
@@ -718,7 +812,6 @@ p {
             letter-spacing: 1.8px;
             color: #333333;
             text-decoration: none;
-            padding-left: 22px;
         }
         .box_common_infor ul li {
             background-color: #ffffff;
@@ -750,7 +843,7 @@ p {
 ****************************************************/
 @media screen and (max-width: 767px) {
     .inner {
-        max-width: 94%;
+        max-width: 96%;
     }
 }    
 /****************************************************
@@ -763,6 +856,12 @@ p {
     }
     #header {
         min-width: 100%;
+    }
+    #header h1 {
+        margin-left: 10px;
+    }
+    #header h1 img {
+        max-width: 310px;
     }
     .menu_collapse {
         display: flex;
@@ -826,7 +925,7 @@ p {
     }
     .ft_info {
         text-align: center;
-        margin: 19px 0;
+        margin: 35px 0 10px;
     }
     .ft_menu {
         text-align: center;
@@ -842,7 +941,7 @@ p {
     .ft_menu a {
         margin: 0 10px;
         font-size: 1.4rem;
-        line-height: 1.5;
+        line-height: 2.5;
     }
     .ft_menu a:first-child, .ft_menu a:nth-child(5) {
         margin-left: 10px;
@@ -853,13 +952,14 @@ p {
     }
     /* BOX */
     .ttl_common_section {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
         font-size: 2.5rem;
-        background-position: left;
+        background-position: 0 10px;
         line-height: 1.5;
         background-size: 22px;
         padding-left: 33px;
+        padding-bottom: 10px;
     }
     .box_common_infor {
         padding: 20px 21px 20px 21px;
@@ -881,45 +981,11 @@ p {
     }
     /*PAGE TOP */
     .pagetop img {
-        padding: 5px 0 2px 0;
+        padding: 13px 0 10px 0;
     }
     .pagetop_img {
         height: 30px;
     }
-}
-@media screen and (max-width:640px) {
-    #header h1 a img {
-        width: 250px;
-    }
-    .page_title_product,.page_title_recruit,.page_title_company,.page_title_privacypolicy,.page_title_contact,.page_title_sitemap {
-        height: 110px;
-    }
-    .page_title_sitemap h2,.page_title_company h2, .page_title_product h2,.page_title_recruit h2,.page_title_privacypolicy h2,.page_title_contact h2{
-        padding: 31px 0 27px 0;
-        text-align: center;
-    }
-    .page_title_sitemap img,.page_title_company img, .page_title_product img,.page_title_recruit img,.page_title_privacypolicy img,.page_title_contact img{
-        height: 50px;
-    }
-    .img_introduce01 ,.img_introduce02 {
-        width: 100%;
-    }
-    .menu_collapse img {
-        right: 2rem;
-    }
-    .company_map iframe {
-        height: 200px;
-    }
-    #btn_common_contact_img {
-        width: 100%;
-        height: 60px;
-    }
-    /* COMMON */
-
-    .ttl_common_section {
-        font-size: 2rem;
-    }
-
 }
 /****************************************************
  * 8.CONTENT FOR SP
@@ -932,41 +998,47 @@ p {
             display: block;
             padding: 30px 0;
         }
+        .top_sec03,.top_sec04 {
+            margin-top: 0;
+        }
         .top_sec01 h2 {
-            font-size: 3rem;
+            font-size: 2.7rem;
+            padding-left: 0;
         }
         .top_sec01_txt {
-            margin-top: 10px;
+            margin-top: 17px;
             margin-left: 5px;
             font-size: 1.6rem;
         }
         .ttl_top_section {
             font-size: 3.5rem;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         .icon_ttl_top_section {
-            margin: 20px 0;
-            font-size: 1.6rem;
-            padding: 3px 0;
+            margin: 15px 0;
+            font-size: 1.7rem;
         }
         .top_sec01 .icon_top_news {
             font-size: 1.4rem;
         }
         .txt_ttl_top_section {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
         .top_sec02,.top_sec03,.top_sec04 {
             padding-top: 30px;
-        }
-        .top_sec03 {
-            padding-bottom: 60px;
+            padding-bottom: 30px;
+            height: auto;
+            background-position: 31% center;
         }
         .btn_img_top_more {
-            width: 240px;
+            width: 300px;
+        }
+        .top_sec04 .wrapper_product,.top_sec03 .wrapper_recruit {
+            padding-top: 0;
         }
         .common_sec,.common_sec01 { padding: 40px 0;}
         .common_sec a img,.common_sec01 a img {
-            width: 86%;
+            width: 100%;
         }
         /* BOX */
         .box_common_infor .box_text,.box_common_infor p {
@@ -975,19 +1047,29 @@ p {
     /****************************************************
     * PAGECONTACT CONTENT
     ****************************************************/
+        .box_common_infor .contact_tell img {
+            margin-bottom: 5px;
+        }
+        .contact_sec02 .mailform_contact {
+            padding-top: 0;
+        }
+        .contact_sec02 .ttl_common_section {
+            margin-bottom: 22px;
+        }
         .mailform_contact p {
             font-size: 1.4rem;
             margin-bottom: 31px;
         }
         .table tbody tr th {
-            width: 30%;
+            width: 160px;
             line-height: 1.5;
-            padding-left: 5px;
+            padding-left: 8px;
             font-size: 1.4rem;
         }
         .table tbody tr th img {
-            margin-top: 0;
-            margin-right: 15px;
+            margin-top: 2px;
+            margin-right: 13px;
+            max-width: 20px;
         }
         .table tbody tr td {
             padding: 12px;
@@ -1006,7 +1088,7 @@ p {
     * PAGE CPRIVACYPOLICY CONTENT
     ****************************************************/
         .privacypolicy_sec01 {
-            margin: 47px 0 55px 0;
+            margin-bottom: 55px;
         }
         .privacypolicy_sec01 p {
             font-size: 1.4rem;
@@ -1016,6 +1098,18 @@ p {
         }
         .privacypolicy_sec01 .panel .panel_in li {
             font-size: 1.4rem;
+        }
+        .privacypolicy_sec01 .ttl_common_section {
+            margin-top: 25px;
+        }
+        .privacypolicy_sec01 .panel {
+            padding: 20px 22px 16px 22px;
+        }
+        .privacypolicy_sec01 .panel .panel_in {
+            padding: 11px 8px;
+        }
+        .privacypolicy_sec01 .panel:nth-child(3), .privacypolicy_sec01 .panel:nth-child(4), .privacypolicy_sec01 .panel:nth-child(5) {
+            padding-bottom: 16px;
         }
     /****************************************************
     * PAGE RECRUIT CONTENT
@@ -1028,17 +1122,22 @@ p {
             padding: 19px 11px 15px 11px;
         }
         .box_common_infor .box_in_infor a img {
-            width: 91%;
+            width: 45%;
         }
         .box_common_infor .add_icon {
             font-size: 1.6rem;
+        }
+        .recruit_sec01 .box_common_infor {
+            margin-bottom: 25px;
+            padding: 27px 20px 30px 20px;
         }
     /****************************************************
     * PAGE PRODUCT CONTENT
     ****************************************************/
         .product_sec01 .product_detail { 
             font-size: 1.9rem; 
-            margin-top: 19px;
+            margin-top: 30px;
+            margin-bottom: 20px;
         }
         .ctn_product_left p { 
             font-size: 1.4rem;
@@ -1055,7 +1154,7 @@ p {
         .product_sec01 .ctn_product_right {
             width: 100%;
             letter-spacing: -9px;
-            padding-top: 20px;
+            padding-top: 35px;
         }
         .product_sec01 .ctn_product_right img {
             width: 48%;
@@ -1090,17 +1189,22 @@ p {
         }
         .table02 tbody tr .product_orange_book {
             bottom: -82px;
-            left: 0;
+            left: -19px;
         }
     /****************************************************
     * PAGE COMPANY CONTENT
     ****************************************************/
         #contents .table01 tbody tr th {
             width: 82px;
-            padding-left: 18px;
+            padding-left: 8px;
+            vertical-align: top;
+            padding-top: 16px;
         }
         #contents .table01 tbody tr th::after {
-            width: 100px;
+            width: 90px;
+        }
+        #contents .table01 tbody tr td {
+            padding: 16px 0 16px 15px;
         }
         .company_image_introduce {
             text-align: center;
@@ -1110,6 +1214,9 @@ p {
             margin-right: 0;
             margin-bottom: 20px;
         }
+        .company_image_introduce .img_introduce01,.company_image_introduce .img_introduce02 {
+            width: 100%;
+        }
         .company_map {
             width: 100%;
         }
@@ -1117,7 +1224,8 @@ p {
             font-size: 1.4rem;
         }
         .company_map dl {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            margin-top: 40px;
         }
         .box_common_infor ul li {
             width: 100%;
@@ -1135,10 +1243,6 @@ p {
         }
 }
 @media screen and (max-width:1120px) and (min-width:769px) {
-    .product_orange_book {
-        right: 142px;
-    }
-    .ctn_product_left { width: 680px;}
     .box_common_infor ul li {
         width: 313px;
     }

@@ -148,6 +148,9 @@
 .font-weight-normal {
     font-weight: 400;
 }
+.font-weight-300 {
+    font-weight: 300;
+}
  /****************************************************
  * 3.UTILITY SETTING
  ****************************************************/
@@ -196,6 +199,12 @@
         margin-bottom: 100px;
     }
     /* PADDING STYLE SETTING */
+    .pt-13 {
+        padding-top: 13px;
+    }
+    .pt-14 {
+        padding-top: 14px;
+    }
     .pt-10 {
         padding-top: 10px;
     }
