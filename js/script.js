@@ -6,13 +6,18 @@ function _handleScroll() {
 }
 
 /*click pagetop */
-var topModoru = $('#footer .pagetop img');
+// var topModoru = $('#footer .pagetop img');
+// topModoru.on('click', function() {
+// 	$("html, body").animate({
+// 		scrollTop: 0
+// 	}, 500);
+// });
+var topModoru = $('#footer .pagetop');
 topModoru.on('click', function() {
 	$("html, body").animate({
 		scrollTop: 0
 	}, 500);
 });
-
 /* click toggle */
 function toggleMenu() {
 	$("#header #toggle").on("click", function () {

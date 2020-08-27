@@ -105,6 +105,7 @@ p {
     background-color: #313738;
 }
 .pagetop {
+    cursor: pointer;
     background-color: #0c46c1;
     text-align: center;
 }
@@ -626,6 +627,9 @@ p {
             border-bottom: 2px solid #f0f4fb;
             vertical-align: top;
         }
+        .recruit_sec01 .table01 tbody tr td {
+            padding: 17px 21px;
+        }
 
         .table01 tbody tr:nth-child(4) td,.table01 tbody tr:nth-child(4) th {
             line-height: 1.7;
@@ -681,6 +685,9 @@ p {
             padding-left: 19px;
             margin-top: 31px;
         }
+        .product_sec01 .margin_30 {
+            margin-top: 30px;
+        }
         .product_sec01 .product_detail::before {
             content: '';
             height: 23px;
@@ -700,17 +707,17 @@ p {
             letter-spacing: normal;
             color: #333333;
             border: 1px solid #f0f4fb;
-            padding: 21px;
+            padding: 21.5px;
         }
         .product_sec01 .ctn_product_right img {
             width: 100%;
             margin-bottom: 20px;
         }
         .product_sec01 .box_common_infor {
-            padding: 21px 28px 22px 28px;
+            padding: 18px 28px 22px 28px;
         }
         .product_sec01 .box_common_infor p {
-            padding-top: 3px;
+            padding-top: 1px;
         }
         .product_sec01 .ttl_product_fontweight {
             font-weight: 300;
@@ -723,11 +730,21 @@ p {
             color: #333333;
         }
         .box_common_infor .ttl_product_box {
-            font-size: 1.6rem;
-            font-weight: 400;
+            font-size: 1.8rem;
+            font-weight: 500;
             line-height: 2;
-            letter-spacing: normal;
+            letter-spacing: 1.8px;
             color: #333333;
+        }
+        .product_sec01 .box_common_infor .dash01 {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+        .product_sec01 .ttl_product_box .dash02 {
+            font-size: 1.6rem;
+            line-height: 2;
+            font-weight: normal;
+            letter-spacing: normal;
         }
         .table02 {
             width: 100%;
@@ -752,10 +769,20 @@ p {
     ****************************************************/
 
         .company_sec01 .box_common_infor {
-            padding: 26px 36px 21px 29px;
+            padding: 27px 36px 21px 29px;
         }
         .company_sec02 .table01 {
             margin-top: 41px;
+        }
+        .company_sec02 .ttl_common_section {
+            margin-top: 87px;
+        }
+        .company_sec02 .table01 tr:first-child td {
+            padding: 17px 21px;
+        }
+        .company_sec02 .table01 tr:last-child th  {
+            vertical-align: middle;
+            padding-top: 0;
         }
         .box_common_infor .box_company p {
             font-weight: bold;
@@ -781,7 +808,7 @@ p {
             background-position: 0;
             padding-left: 23px;
             font-weight: 500;
-            margin-top: 30px;
+            margin-top: 29px;
         }
         .company_map dl dd {
             margin-top: 18px;
@@ -952,7 +979,7 @@ p {
     }
     /* BOX */
     .ttl_common_section {
-        margin-top: 30px;
+        margin-top: 35px;
         margin-bottom: 30px;
         font-size: 2.5rem;
         background-position: 0 10px;
@@ -966,13 +993,13 @@ p {
     }
     /* PAGE_TITLE */
     .page_title_product,.page_title_recruit,.page_title_company,.page_title_privacypolicy,.page_title_contact,.page_title_sitemap {
-        height: 180px;
+        height: 170px;
     }
     .page_title_sitemap img,.page_title_company img, .page_title_product img,.page_title_recruit img,.page_title_privacypolicy img,.page_title_contact img{
         height: 60px;
     }
     .page_title_sitemap h2,.page_title_company h2, .page_title_product h2,.page_title_recruit h2,.page_title_privacypolicy h2,.page_title_contact h2{
-        padding: 65px 0 55px 0;
+        padding: 65px 0 45px 0;
         text-align: center;
     }
     /* BREACRUMB */
@@ -996,17 +1023,17 @@ p {
     ****************************************************/  
         .top_sec01 {
             display: block;
-            padding: 30px 0;
+            padding: 35px 0;
         }
         .top_sec03,.top_sec04 {
             margin-top: 0;
         }
         .top_sec01 h2 {
-            font-size: 2.7rem;
+            font-size: 3rem;
             padding-left: 0;
         }
         .top_sec01_txt {
-            margin-top: 17px;
+            margin-top: 19px;
             margin-left: 5px;
             font-size: 1.6rem;
         }
@@ -1082,7 +1109,7 @@ p {
             padding-right: 10px;
         }
         .contact_sec02 .submit {
-            margin: 30px 0 50px 0;
+            margin: 40px 0 40px 0;
         }
     /****************************************************
     * PAGE CPRIVACYPOLICY CONTENT
@@ -1099,11 +1126,11 @@ p {
         .privacypolicy_sec01 .panel .panel_in li {
             font-size: 1.4rem;
         }
-        .privacypolicy_sec01 .ttl_common_section {
-            margin-top: 25px;
-        }
         .privacypolicy_sec01 .panel {
             padding: 20px 22px 16px 22px;
+        }
+        .privacypolicy_sec01 ol .padding_bottom {
+            padding-bottom: 23px;
         }
         .privacypolicy_sec01 .panel .panel_in {
             padding: 11px 8px;
@@ -1115,20 +1142,19 @@ p {
     * PAGE RECRUIT CONTENT
     ****************************************************/
         #contents .table01 {
-            margin-top: 0;
             margin-bottom: 25px;
         }
         .box_common_infor .box_in_infor {
             padding: 19px 11px 15px 11px;
+            margin-top: 18px;
         }
         .box_common_infor .box_in_infor a img {
-            width: 45%;
+            width: 260px;
         }
         .box_common_infor .add_icon {
             font-size: 1.6rem;
         }
         .recruit_sec01 .box_common_infor {
-            margin-bottom: 25px;
             padding: 27px 20px 30px 20px;
         }
     /****************************************************
@@ -1136,8 +1162,11 @@ p {
     ****************************************************/
         .product_sec01 .product_detail { 
             font-size: 1.9rem; 
-            margin-top: 30px;
+            margin-top: 35px;
             margin-bottom: 20px;
+        }
+        .product_sec01 .margin_30 {
+            margin-top: 40px;
         }
         .ctn_product_left p { 
             font-size: 1.4rem;
@@ -1159,6 +1188,9 @@ p {
         .product_sec01 .ctn_product_right img {
             width: 48%;
             margin: 1%;
+        }
+        .table02 {
+            margin-bottom: 108px;
         }
         .table02 tbody {
             display: inline;
@@ -1194,6 +1226,12 @@ p {
     /****************************************************
     * PAGE COMPANY CONTENT
     ****************************************************/
+        .company_sec02 .ttl_common_section {
+            margin-top: 30px;
+        }
+        .company_sec02 .table01 {
+            margin-top: 0;
+        }
         #contents .table01 tbody tr th {
             width: 82px;
             padding-left: 8px;
@@ -1227,6 +1265,9 @@ p {
             margin-bottom: 40px;
             margin-top: 40px;
         }
+        .company_map dl dd {
+            margin-top: 15px;
+        }
         .box_common_infor ul li {
             width: 100%;
             margin: 0 0 15px 0;
@@ -1241,6 +1282,15 @@ p {
         #box_common_company {
             margin-top: 30px;
         }
+    /****************************************************
+    * SITEMAP CONTENT
+    ****************************************************/
+        .sitemap_sec01 {
+            margin-bottom: 50px;
+        }
+        .sitemap_sec01 .ttl_common_section {
+            margin-bottom: 30px;
+        }     
 }
 @media screen and (max-width:1120px) and (min-width:769px) {
     .box_common_infor ul li {
