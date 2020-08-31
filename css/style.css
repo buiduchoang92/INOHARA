@@ -905,7 +905,7 @@ p {
         cursor: pointer;
         position: absolute;
         color: #061c49;
-        right: 3rem;
+        right: 2rem;
         z-index: 2;
     }
     #gNav.gNav_wrapper {
