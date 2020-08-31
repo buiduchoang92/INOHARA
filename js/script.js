@@ -5,13 +5,6 @@ function _handleScroll() {
 	});
 }
 
-/*click pagetop */
-// var topModoru = $('#footer .pagetop img');
-// topModoru.on('click', function() {
-// 	$("html, body").animate({
-// 		scrollTop: 0
-// 	}, 500);
-// });
 var topModoru = $('#footer .pagetop');
 topModoru.on('click', function() {
 	$("html, body").animate({
