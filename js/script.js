@@ -33,14 +33,14 @@ function toggleMenu() {
   $(document).ready(function() {
     $("#formContact").validate({
         rules: {
-			"personal_name": {required:true},
-            "email": {required:true,email:true},
-			"content_contact": {required:true}
+			"お名前": {required:true},
+            "メールアドレス": {required:true,email:true},
+			"お問い合わせ内容": {required:true}
         },
         messages: {
-            "personal_name":{required: "未入力です。"},
-            "email": {required: "未入力です。", email: "入力に誤りがあります。"},
-            "content_contact":{required: "未入力です。"}
+            "お名前":{required: "未入力です。"},
+            "メールアドレス": {required: "未入力です。", email: "入力に誤りがあります。"},
+            "お問い合わせ内容":{required: "未入力です。"}
         }
     });
 });

@@ -63,32 +63,32 @@
                             <br> 半角カタカナ、外字（登録文字）での入力は文字化けの原因となりますのでお控えください。
                             <br><a href="./privacypolicy.html">個人情報保護方針</a>にご同意の上、送信ください。</p>
                     </div>
-                    <form id="formContact" action="./index.html" method="GET">
+                    <form id="formContact" action="./lib/mail/mail.php" method="POST">
                         <table class="table">
                             <tbody>
                                 <tr>
                                     <th>会社名</th>
-                                    <td><input type="text" name="company_name" ></td>
+                                    <td><input type="text" name="会社名" ></td>
                                 </tr>
                                 <tr>
                                     <th>お名前<img src="./img/contact/pic_contact_star.jpg" alt=""></th>
-                                    <td><input type="text" name="personal_name" required></td>
+                                    <td><input type="text" name="お名前" required></td>
                                 </tr>
                                 <tr>
                                     <th>メールアドレス<img src="./img/contact/pic_contact_star.jpg" alt=""></th>
-                                    <td><input type="text" name="email"></td>
+                                    <td><input type="text" name="メールアドレス"></td>
                                 </tr>
                                 <tr>
                                     <th>お電話番号</th>
-                                    <td><input type="text" name="phone_number" ></td>
+                                    <td><input type="text" name="お電話番号" ></td>
                                 </tr>
                                 <tr>
                                     <th>FAX番号</th>
-                                    <td><input type="text" name="fax_number"></td>
+                                    <td><input type="text" name="FAX番号"></td>
                                 </tr>
                                 <tr>
                                     <th>お問い合わせ内容<img src="./img/contact/pic_contact_star.jpg" alt=""></th>
-                                    <td><textarea type="text" name="content_contact"></textarea></td>
+                                    <td><textarea type="text" name="お問い合わせ内容"></textarea></td>
                                 </tr>
                             </tbody>
                         <!--End table--></table>
